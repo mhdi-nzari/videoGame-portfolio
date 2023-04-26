@@ -607,14 +607,18 @@ video {
   margin-right: auto;
 }
 
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
 }
 
-.my-10 {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+.mr-auto {
+  margin-right: auto;
 }
 
 .mt-10 {
@@ -631,14 +635,6 @@ video {
 
 .mt-9 {
   margin-top: 2.25rem;
-}
-
-.mr-auto {
-  margin-right: auto;
-}
-
-.ml-auto {
-  margin-left: auto;
 }
 
 .line-clamp-2 {
@@ -949,10 +945,6 @@ video {
   padding-bottom: 1.25rem;
 }
 
-.pb-14 {
-  padding-bottom: 3.5rem;
-}
-
 .pb-16 {
   padding-bottom: 4rem;
 }
@@ -1054,32 +1046,8 @@ video {
   line-height: 2.25rem;
 }
 
-.leading-\[3\.6rem\] {
-  line-height: 3.6rem;
-}
-
 .leading-\[3rem\] {
   line-height: 3rem;
-}
-
-.leading-\[5rem\] {
-  line-height: 5rem;
-}
-
-.\!leading-\[3rem\] {
-  line-height: 3rem !important;
-}
-
-.\!leading-\[3\.4rem\] {
-  line-height: 3.4rem !important;
-}
-
-.\!leading-\[4\.5rem\] {
-  line-height: 4.5rem !important;
-}
-
-.\!leading-\[5rem\] {
-  line-height: 5rem !important;
 }
 
 .text-\[\#494949\] {
@@ -1135,7 +1103,12 @@ video {
 }
 
 #header {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.26)), linear-gradient(180deg, rgba(0, 0, 0, 0) 74.49%, rgba(0, 0, 0, 0.85) 95.83%, rgba(0, 0, 0, 0.7) 100%, rgba(0, 0, 0, 0.8) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 4.46%, rgba(0, 0, 0, 0.226264) 7.61%, rgba(0, 0, 0, 0.226264) 9.49%, rgba(0, 0, 0, 0) 17.26%), linear-gradient(90deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.78) 41.86%, rgba(0, 0, 0, 0.55) 53.51%, rgba(0, 0, 0, 0.4) 64.75%, rgba(0, 0, 0, 0) 73.19%), url('/src/assets/img/banner.jpg');
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.26)),
+     linear-gradient(180deg, rgba(0, 0, 0, 0) 74.49%, rgba(0, 0, 0, 0.85) 95.83%, rgba(0, 0, 0, 0.7) 100%, rgba(0, 0, 0, 0.8) 100%),
+     linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 4.46%, rgba(0, 0, 0, 0.226264) 7.61%, rgba(0, 0, 0, 0.226264) 9.49%, rgba(0, 0, 0, 0) 17.26%),
+     linear-gradient(90deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.78) 41.86%, rgba(0, 0, 0, 0.55) 53.51%, rgba(0, 0, 0, 0.4) 64.75%, rgba(0, 0, 0, 0) 73.19%),
+     url('/src/assets/img/banner-2.jpg') no-repeat center center;
+  background-size: cover;
 }
 
 .placeholder\:font-medium::-moz-placeholder {
@@ -1379,10 +1352,6 @@ video {
 
   .lg\:leading-\[4\.2rem\] {
     line-height: 4.2rem;
-  }
-
-  .lg\:\!leading-\[5rem\] {
-    line-height: 5rem !important;
   }
 }
 
