@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+     <title>Game Nexus - Video Game Platform</title>
+     <link rel="apple-touch-icon" sizes="57x57" href="/src/assets/img/icon/apple-icon-57x57.png">
+     <link rel="apple-touch-icon" sizes="60x60" href="/src/assets/img/icon/apple-icon-60x60.png">
+     <link rel="apple-touch-icon" sizes="72x72" href="/src/assets/img/icon/apple-icon-72x72.png">
+     <link rel="apple-touch-icon" sizes="76x76" href="/src/assets/img/icon/apple-icon-76x76.png">
+     <link rel="apple-touch-icon" sizes="114x114" href="/src/assets/img/icon/apple-icon-114x114.png">
+     <link rel="apple-touch-icon" sizes="120x120" href="/src/assets/img/icon/apple-icon-120x120.png">
+     <link rel="apple-touch-icon" sizes="144x144" href="/src/assets/img/icon/apple-icon-144x144.png">
+     <link rel="apple-touch-icon" sizes="152x152" href="/src/assets/img/icon/apple-icon-152x152.png">
+     <link rel="apple-touch-icon" sizes="180x180" href="/src/assets/img/icon/apple-icon-180x180.png">
+     <link rel="icon" type="image/png" sizes="192x192" href="/src/assets/img/icon/android-icon-192x192.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+     <link rel="manifest" href="/manifest.json">
+     <meta name="msapplication-TileColor" content="#ffffff">
+     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+     <meta name="theme-color" content="#ffffff">
+     <link rel="stylesheet" href="./src/style/css/index.css">
+     <link rel="stylesheet" href="./src/style/css/tailwind.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+     <header id="header" class="w-full sticky top-0 h-[1000px] md:h-[800px] ">
+          <nav
+               class="container pt-10 py-5 bg-transparent flex justify-between w-full mx-auto relative after:w-3/5 after:h-[0.7px] after:absolute after:bottom-0 after:left-1/2 after:right-1/2 after:-translate-x-1/2  after:bg-gradient-to-l after:from-white after:from-0 after:to-black after:to-100%">
+               <!-- website icon -->
+               <div class="">
+                    <img src="./src/assets/img/logo.svg" alt="logo-icon" class="">
+               </div>
+
+               <!-- menu header -->
+               <div class="w-fit hidden lg:flex">
+                    <ul class=" items-center gap-x-5 flex">
+                         <li><a class="text-white text-lg font-medium capitalize" href="#">Store</a></li>
+                         <li><a class="text-white text-lg font-medium capitalize" href="#">About</a></li>
+                         <li><a class="text-white text-lg font-medium capitalize" href="#">Community</a></li>
+                         <li><a class="text-white text-lg font-medium capitalize" href="#">Sign In</a></li>
+
+                    </ul>
+               </div>
+
+               <!-- left icon -->
+               <div class="flex gap-x-3">
+                    <button type="button" role="search">
+                         <svg width="25" height="25" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M30 30L23.705 23.705M27 15.75C27 9.5368 21.9632 4.5 15.75 4.5C9.5368 4.5 4.5 9.5368 4.5 15.75C4.5 21.9632 9.5368 27 15.75 27C21.9632 27 27 21.9632 27 15.75Z"
+                                   stroke="white" stroke-width="3.27273" stroke-linecap="round"
+                                   stroke-linejoin="round" />
+                         </svg>
+
+                    </button>
+                    <button type="button" role="dialog">
+                         <svg width="25" height="25" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M3 4.5H6.75L9.75 25.5H25.5M25.5 25.5C23.8431 25.5 22.5 26.8431 22.5 28.5C22.5 30.1569 23.8431 31.5 25.5 31.5C27.1569 31.5 28.5 30.1569 28.5 28.5C28.5 26.8431 27.1569 25.5 25.5 25.5ZM9.10713 21H27L31.5 7.5H7.17856M16.5 28.5C16.5 30.1569 15.1569 31.5 13.5 31.5C11.8431 31.5 10.5 30.1569 10.5 28.5C10.5 26.8431 11.8431 25.5 13.5 25.5C15.1569 25.5 16.5 26.8431 16.5 28.5Z"
+                                   stroke="white" stroke-width="2.94545" stroke-linecap="round"
+                                   stroke-linejoin="round" />
+                         </svg>
+
+                    </button>
+               </div>
+          </nav>
+
+          <!-- data -->
+          <section class="w-full h-full container mx-auto relative overflow-hidden">
+               <div class="flex flex-col w-full items-start pt-24">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl text-left text-white font-black leading-[3.6rem]">FIND
+                         YOUR NEXT GAMING <span
+                              class="text-transparent bg-clip-text bg-gradient-to-r from-[#28C3C3] to-white">ADVENTURE
+                              !</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl font-semibold mt-9 leading-10 text-white">Welcome to our video game
+                         shop Discover
+                         exciting
+                         new games.
+                    </p>
+
+                    <div class="flex flex-wrap gap-7 mt-24">
+                         <button
+                              class="text-black px-4 py-2 text-lg md:px-8 md:py-3 bg-primary md:text-2xl font-medium rounded-[10px]  shadow-white ">Shop
+                              Now</button>
+
+                         <button
+                              class="text-white px-4 py-2 text-lg md:px-8 md:py-3 bg-transparent md:text-2xl font-medium  border-b-2 border-white">Explore</button>
+                    </div>
+
+               </div>
+
+
+
+          </section>
+          <div
+               class="absolute bottom-5 left-0 right-0 flex w-full items-center flex-wrap px-10 md:px-0 gap-5 mx-auto justify-center ">
+               <a href="#">
+                    <div class=" w-24 lg:w-[150px]"><img class="w-full h-full" src="./src/assets/img/brand1.svg"
+                              alt="brand1">
+                    </div>
+               </a>
+               <a href="#">
+                    <div class=" w-24 lg:w-[150px]"><img class="w-full h-full" src="./src/assets/img/brand2.svg"
+                              alt="brand2">
+                    </div>
+               </a>
+               <a href="#">
+                    <div class=" w-24 lg:w-[150px]"><img class="w-full h-full" src="./src/assets/img/brand3.svg"
+                              alt="brand3">
+                    </div>
+               </a>
+               <a href="#">
+                    <div class=" w-24 lg:w-[150px]"><img class="w-full h-full" src="./src/assets/img/brand4.svg"
+                              alt="brand4">
+                    </div>
+               </a>
+               <a href="#">
+                    <div class=" w-24 lg:w-[150px]"><img class="w-full h-full" src="./src/assets/img/brand5.svg"
+                              alt="brand5">
+                    </div>
+               </a>
+          </div>
+     </header>
+     <main class="w-full">
+
+          <!-- Category Featured Games -->
+          <section class="pt-32  ">
+               <div>
+                    <div class="container mx-auto">
+                         <h1
+                              class=" border-l-4 w-fit border-solid border-primary pl-10 py-2 text-4xl text-black font-bold ">
+                              Featured Games
+                         </h1>
+                    </div>
+
+                    <div class="w-full mt-10">
+                         <!-- Slider main container -->
+                         <div class="swiper !py-10 !px-14 w-full">
+                              <!-- Additional required wrapper -->
+                              <div class="swiper-wrapper">
+                                   <!-- Slides -->
+
+                                   <!-- slider item -->
+                                   <figure
+                                        class="swiper-slide bg-white rounded-xl overflow-hidden shadow-xl w-auto h-64 ">
+                                        <!-- img item -->
+                                        <div class="px-3 py-12 bg-[#E5E5E5] relative">
+                                             <div class="w-48 h-auto m-auto">
+                                                  <img src="./src/assets/img/game.png" class="w-full h-full"
+                                                       alt="productOne">
+                                             </div>
+
+                                             <!-- add to cart -->
+                                             <button type="button"
+                                                  class="p-3 flex justify-center items-center rounded-full bg-black absolute right-5  -bottom-6 transition-all duration-500 hover:shadow-2xl hover:rotate-180 hover:bg-primary ">
+                                                  <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                                       xmlns="http://www.w3.org/2000/svg">
+                                                       <path d="M2.3335 13.0002H23.6668M13.0002 2.3335V23.6668"
+                                                            stroke="white" stroke-width="4" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                  </svg>
+
+                                             </button>
+                                        </div>
+
+                                        <figcaption class="flex flex-col bg-white p-8">
+                                             <div class="w-full">
+                                                  <h1
+                                                       class="text-base 2xl:text-lg   font-semibold pb-4 leading-9 text-black line-clamp-2">
+                                                       Call Of
+                                                       Duty: Modern
+                                                       Warfare II</h1>
+                                             </div>
+
+                                             <div class="flex flex-wrap justify-between w-full ">
+                                                  <p class="text-lg font-semibold">⭐ 4.8</p>
+                                                  <p class="text-black text-xl font-bold whitespace-nowrap">
+                                                       $69.99
+                                                  </p>
+                                             </div>
+
+
+                                        </figcaption>
+                                   </figure>
+
+
+                                   <!-- slider item -->
+                                   <figure class="swiper-slide bg-white rounded-xl overflow-hidden shadow-xl">
+                                        <!-- img item -->
+                                        <div class="px-3 py-12 bg-[#E5E5E5] relative">
+                                             <div class="w-48 h-auto m-auto">
+                                                  <img src="./src/assets/img/game2.png" class="w-full h-full"
+                                                       alt="productOne">
+                                             </div>
+
+                                             <!-- add to cart -->
+                                             <button type="button"
+                                                  class="p-3 flex justify-center items-center rounded-full bg-black absolute right-5  -bottom-6 transition-all duration-500 hover:shadow-2xl hover:rotate-180 hover:bg-primary ">
+                                                  <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                                       xmlns="http://www.w3.org/2000/svg">
+                                                       <path d="M2.3335 13.0002H23.6668M13.0002 2.3335V23.6668"
+                                                            stroke="white" stroke-width="4" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                  </svg>
+
+                                             </button>
+                                        </div>
+
+                                        <figcaption class="flex flex-col bg-white p-8">
+                                             <div class="w-full">
+                                                  <h1
+                                                       class="text-base 2xl:text-lg   font-semibold pb-4 leading-9 text-black line-clamp-2">
+                                                       Hogwarts Legacy - Xbox Series X</h1>
+                                             </div>
+
+                                             <div class="flex flex-wrap justify-between w-full ">
+                                                  <p class="text-lg font-semibold">⭐ 4.8</p>
+                                                  <p class="text-black text-xl font-bold whitespace-nowrap">
+                                                       $70.99
+                                                  </p>
+                                             </div>
+
+
+                                        </figcaption>
+                                   </figure>
+
+                                   <!-- slider item -->
+                                   <figure class="swiper-slide bg-white rounded-xl overflow-hidden shadow-xl">
+                                        <!-- img item -->
+                                        <div class="px-3 py-12 bg-[#E5E5E5] relative">
+                                             <div class="w-48 h-auto m-auto">
+                                                  <img src="./src/assets/img/game3.png" class="w-full h-full"
+                                                       alt="productOne">
+                                             </div>
+
+                                             <!-- add to cart -->
+                                             <button type="button"
+                                                  class="p-3 flex justify-center items-center rounded-full bg-black absolute right-5  -bottom-6 transition-all duration-500 hover:shadow-2xl hover:rotate-180 hover:bg-primary ">
+                                                  <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                                       xmlns="http://www.w3.org/2000/svg">
+                                                       <path d="M2.3335 13.0002H23.6668M13.0002 2.3335V23.6668"
+                                                            stroke="white" stroke-width="4" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                  </svg>
+
+                                             </button>
+                                        </div>
+
+                                        <figcaption class="flex flex-col bg-white p-8">
+                                             <div class="w-full">
+                                                  <h1
+                                                       class="text-base 2xl:text-lg   font-semibold pb-4 leading-9 text-black line-clamp-2">
+                                                       Resident Evil 4-
+                                                       Play station 5</h1>
+                                             </div>
+
+                                             <div class="flex flex-wrap justify-between w-full ">
+                                                  <p class="text-lg font-semibold">⭐ 3.8</p>
+                                                  <p class="text-black text-xl font-bold whitespace-nowrap">
+                                                       %500.99
+                                                  </p>
+                                             </div>
+
+
+                                        </figcaption>
+                                   </figure>
+
+
+
+                                   <figure class="swiper-slide bg-white rounded-xl overflow-hidden shadow-xl">
+                                        <!-- img item -->
+                                        <div class="px-3 py-12 bg-[#E5E5E5] relative">
+                                             <div class="w-48 h-auto m-auto">
+                                                  <img src="./src/assets/img/game2.png" class="w-full h-full"
+                                                       alt="productOne">
+                                             </div>
+
+                                             <!-- add to cart -->
+                                             <button type="button"
+                                                  class="p-3 flex justify-center items-center rounded-full bg-black absolute right-5  -bottom-6 transition-all duration-500 hover:shadow-2xl hover:rotate-180 hover:bg-primary ">
+                                                  <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                                       xmlns="http://www.w3.org/2000/svg">
+                                                       <path d="M2.3335 13.0002H23.6668M13.0002 2.3335V23.6668"
+                                                            stroke="white" stroke-width="4" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                  </svg>
+
+                                             </button>
+                                        </div>
+
+                                        <figcaption class="flex flex-col bg-white p-8">
+                                             <div class="w-full">
+                                                  <h1
+                                                       class="text-base 2xl:text-lg   font-semibold pb-4 leading-9 text-black line-clamp-2">
+                                                       The Legend Of Zelda Tears Of The Kingdom</h1>
+                                             </div>
+
+                                             <div class="flex flex-wrap justify-between w-full ">
+                                                  <p class="text-lg font-semibold">⭐ 7.8</p>
+                                                  <p class="text-black text-xl font-bold whitespace-nowrap">
+                                                       $151,000
+                                                  </p>
+                                             </div>
+
+
+                                        </figcaption>
+                                   </figure>
+
+
+                                   <figure class="swiper-slide bg-white rounded-xl overflow-hidden shadow-xl">
+                                        <!-- img item -->
+                                        <div class="px-3 py-12 bg-[#E5E5E5] relative">
+                                             <div class="w-48 h-auto m-auto">
+                                                  <img src="./src/assets/img/game.png" class="w-full h-full"
+                                                       alt="productOne">
+                                             </div>
+
+                                             <!-- add to cart -->
+                                             <button type="button"
+                                                  class="p-3 flex justify-center items-center rounded-full bg-black absolute right-5  -bottom-6 transition-all duration-500 hover:shadow-2xl hover:rotate-180 hover:bg-primary ">
+                                                  <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                                       xmlns="http://www.w3.org/2000/svg">
+                                                       <path d="M2.3335 13.0002H23.6668M13.0002 2.3335V23.6668"
+                                                            stroke="white" stroke-width="4" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                  </svg>
+
+                                             </button>
+                                        </div>
+
+                                        <figcaption class="flex flex-col bg-white p-8">
+                                             <div class="w-full">
+                                                  <h1
+                                                       class="text-base 2xl:text-lg   font-semibold pb-4 leading-9 text-black line-clamp-2">
+                                                       Microsoft - Xbox Controller</h1>
+                                             </div>
+
+                                             <div class="flex flex-wrap justify-between w-full ">
+                                                  <p class="text-lg font-semibold">⭐ 4.8</p>
+                                                  <p class="text-black text-xl font-bold whitespace-nowrap">
+                                                       $69.99
+                                                  </p>
+                                             </div>
+
+
+                                        </figcaption>
+                                   </figure>
+
+                              </div>
+
+
+                              <!-- If we need navigation buttons -->
+                              <!-- <div class="swiper-button-prev"></div>
+                              <div class="swiper-button-next"></div> -->
+
+
+                         </div>
+                    </div>
+               </div>
+          </section>
+
+          <!-- banner section -->
+          <section class="py-32 container mx-auto flex flex-wrap">
+               <div class="w-full h-full">
+                    <img src="./src/assets/img/banner-one.jpg" class="w-full h-[114px] md:h-[300px] " alt="godOfWar">
+               </div>
+
+               <div class="grid grid-cols-1 md:grid-cols-2  my-5 w-full mx-auto gap-5">
+
+                    <figure class=" bg-white rounded-bl-xl rounded-br-xl   overflow-hidden shadow-xl flex-1 ">
+                         <!-- img item -->
+                         <div class=" relative">
+                              <div class="w-full h-[200px] m-auto">
+                                   <img src="./src/assets/img/banner-There.jpg"
+                                        class=" rounded-bl-xl rounded-br-xl w-full h-full" alt="productOne">
+                              </div>
+
+                              <!-- add to cart -->
+                              <button type="button"
+                                   class="p-3 flex justify-center items-center rounded-full bg-black absolute right-5  -bottom-6 transition-all duration-500 hover:shadow-2xl hover:rotate-180 hover:bg-primary ">
+                                   <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.3335 13.0002H23.6668M13.0002 2.3335V23.6668" stroke="white"
+                                             stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                                   </svg>
+
+                              </button>
+                         </div>
+
+                         <figcaption class="flex flex-col bg-white p-8">
+                              <div class="w-full">
+                                   <h1
+                                        class="text-base 2xl:text-lg   font-semibold pb-4 leading-9 text-black line-clamp-2">
+                                        Call Of
+                                        Duty: Modern
+                                        Warfare II</h1>
+                              </div>
+
+                              <div class="flex flex-wrap justify-between w-full ">
+                                   <p class="text-lg font-semibold">⭐ 4.8</p>
+                                   <p class="text-black text-xl font-bold whitespace-nowrap">
+                                        $69.99
+                                   </p>
+                              </div>
+
+
+                         </figcaption>
+                    </figure>
+
+
+                    <figure class=" bg-white rounded-bl-xl rounded-br-xl   overflow-hidden shadow-xl flex-1 ">
+                         <!-- img item -->
+                         <div class=" relative">
+                              <div class="w-full h-[200px] m-auto">
+                                   <img src="./src/assets/img/header.jpg"
+                                        class=" rounded-bl-xl rounded-br-xl w-full h-full" alt="productOne">
+                              </div>
+
+                              <!-- add to cart -->
+                              <button type="button"
+                                   class="p-3 flex justify-center items-center rounded-full bg-black absolute right-5  -bottom-6 transition-all duration-500 hover:shadow-2xl hover:rotate-180 hover:bg-primary ">
+                                   <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.3335 13.0002H23.6668M13.0002 2.3335V23.6668" stroke="white"
+                                             stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                                   </svg>
+
+                              </button>
+                         </div>
+
+                         <figcaption class="flex flex-col bg-white p-8">
+                              <div class="w-full">
+                                   <h1
+                                        class="text-base 2xl:text-lg   font-semibold pb-4 leading-9 text-black line-clamp-2">
+                                        Call Of
+                                        Duty: Modern
+                                        Warfare II</h1>
+                              </div>
+
+                              <div class="flex flex-wrap justify-between w-full ">
+                                   <p class="text-lg font-semibold">⭐ 4.8</p>
+                                   <p class="text-black text-xl font-bold whitespace-nowrap">
+                                        $69.99
+                                   </p>
+                              </div>
+
+
+                         </figcaption>
+                    </figure>
+
+               </div>
+          </section>
+
+          <section class=" bg-black">
+               <div class="container flex flex-col lg:flex-row mx-auto gap-5 md:gap-0 py-10 lg:py-0">
+                    <div class="w-full lg:w-1/3 flex justify-center items-center flex-col">
+                         <h3 class="text-white text-3xl lg:text-5xl font-bold leading-[3rem] lg:leading-[4.2rem]">
+                              Deals Of <br>The Day</h3>
+                         <span class="text-white pt-8 text-lg md:text-2xl lg:text-3xl font-medium">09 :24 :14</span>
+                    </div>
+
+                    <div class="w-full lg:w-2/3">
+                         <!-- Slider main container -->
+                         <div class="swiper swiper-deals !p-14 w-full">
+                              <!-- Additional required wrapper -->
+                              <div class="swiper-wrapper">
+                                   <!-- Slides -->
+
+                                   <!-- slider item -->
+                                   <figure
+                                        class="swiper-slide bg-white rounded-xl overflow-hidden shadow-xl h-64 w-auto">
+                                        <!-- img item -->
+                                        <div class="px-3 py-12 bg-[#E5E5E5] relative">
+                                             <div class="w-40 h-auto m-auto">
+                                                  <img src="./src/assets/img/product1.png" class="w-full h-full"
+                                                       alt="productOne">
+                                             </div>
+
+                                             <!-- add to cart -->
+                                             <button type="button"
+                                                  class="p-3 flex justify-center items-center rounded-full bg-black absolute right-5  -bottom-6 transition-all duration-500 hover:shadow-2xl hover:rotate-180 hover:bg-primary ">
+                                                  <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                                       xmlns="http://www.w3.org/2000/svg">
+                                                       <path d="M2.3335 13.0002H23.6668M13.0002 2.3335V23.6668"
+                                                            stroke="white" stroke-width="4" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                  </svg>
+
+                                             </button>
+                                        </div>
+
+                                        <figcaption class="flex flex-col bg-white p-8">
+                                             <div class="w-full">
+                                                  <h1
+                                                       class="text-base 2xl:text-lg   font-semibold pb-4 leading-9 text-black line-clamp-2">
+                                                       Microsoft - Xbox Controller</h1>
+                                             </div>
+
+                                             <div class="flex flex-wrap justify-between w-full ">
+                                                  <p class="text-lg font-semibold">⭐ 4.8</p>
+                                                  <p class="text-black text-xl font-bold whitespace-nowrap">
+                                                       $69.99
+                                                  </p>
+                                             </div>
+
+
+                                        </figcaption>
+                                   </figure>
+
+
+                                   <!-- slider item -->
+                                   <figure class="swiper-slide bg-white rounded-xl overflow-hidden shadow-xl h-64">
+                                        <!-- img item -->
+                                        <div class="px-3 py-12 bg-[#E5E5E5] relative">
+                                             <div class="w-40 h-auto m-auto">
+                                                  <img src="./src/assets/img/product1.png" class="w-full h-full"
+                                                       alt="productOne">
+                                             </div>
+
+                                             <!-- add to cart -->
+                                             <button type="button"
+                                                  class="p-3 flex justify-center items-center rounded-full bg-black absolute right-5  -bottom-6 transition-all duration-500 hover:shadow-2xl hover:rotate-180 hover:bg-primary ">
+                                                  <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                                       xmlns="http://www.w3.org/2000/svg">
+                                                       <path d="M2.3335 13.0002H23.6668M13.0002 2.3335V23.6668"
+                                                            stroke="white" stroke-width="4" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                  </svg>
+
+                                             </button>
+                                        </div>
+
+                                        <figcaption class="flex flex-col bg-white p-8">
+                                             <div class="w-full">
+                                                  <h1
+                                                       class="text-base 2xl:text-lg   font-semibold pb-4 leading-9 text-black line-clamp-2">
+                                                       Microsoft - Xbox Controller</h1>
+                                             </div>
+
+                                             <div class="flex flex-wrap justify-between w-full ">
+                                                  <p class="text-lg font-semibold">⭐ 4.8</p>
+                                                  <p class="text-black text-xl font-bold whitespace-nowrap">
+                                                       $70.99
+                                                  </p>
+                                             </div>
+
+
+                                        </figcaption>
+                                   </figure>
+
+                                   <!-- slider item -->
+                                   <figure class="swiper-slide bg-white rounded-xl overflow-hidden shadow-xl h-64">
+                                        <!-- img item -->
+                                        <div class="px-3 py-12 bg-[#E5E5E5] relative">
+                                             <div class="w-40 h-auto m-auto">
+                                                  <img src="./src/assets/img/product1.png" class="w-full h-full"
+                                                       alt="productOne">
+                                             </div>
+
+                                             <!-- add to cart -->
+                                             <button type="button"
+                                                  class="p-3 flex justify-center items-center rounded-full bg-black absolute right-5  -bottom-6 transition-all duration-500 hover:shadow-2xl hover:rotate-180 hover:bg-primary ">
+                                                  <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                                       xmlns="http://www.w3.org/2000/svg">
+                                                       <path d="M2.3335 13.0002H23.6668M13.0002 2.3335V23.6668"
+                                                            stroke="white" stroke-width="4" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                  </svg>
+
+                                             </button>
+                                        </div>
+
+                                        <figcaption class="flex flex-col bg-white p-8">
+                                             <div class="w-full">
+                                                  <h1
+                                                       class="text-base 2xl:text-lg   font-semibold pb-4 leading-9 text-black line-clamp-2">
+                                                       Microsoft - Xbox Controller</h1>
+                                             </div>
+
+                                             <div class="flex flex-wrap justify-between w-full ">
+                                                  <p class="text-lg font-semibold">⭐ 3.8</p>
+                                                  <p class="text-black text-xl font-bold whitespace-nowrap">
+                                                       %500.99
+                                                  </p>
+                                             </div>
+
+
+                                        </figcaption>
+                                   </figure>
+
+
+                                   <figure class="swiper-slide bg-white rounded-xl overflow-hidden shadow-xl h-64">
+                                        <!-- img item -->
+                                        <div class="px-3 py-12 bg-[#E5E5E5] relative">
+                                             <div class="w-40 h-auto m-auto">
+                                                  <img src="./src/assets/img/product1.png" class="w-full h-full"
+                                                       alt="productOne">
+                                             </div>
+
+                                             <!-- add to cart -->
+                                             <button type="button"
+                                                  class="p-3 flex justify-center items-center rounded-full bg-black absolute right-5  -bottom-6 transition-all duration-500 hover:shadow-2xl hover:rotate-180 hover:bg-primary ">
+                                                  <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                                       xmlns="http://www.w3.org/2000/svg">
+                                                       <path d="M2.3335 13.0002H23.6668M13.0002 2.3335V23.6668"
+                                                            stroke="white" stroke-width="4" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                  </svg>
+
+                                             </button>
+                                        </div>
+
+                                        <figcaption class="flex flex-col bg-white p-8">
+                                             <div class="w-full">
+                                                  <h1
+                                                       class="text-base 2xl:text-lg   font-semibold pb-4 leading-9 text-black line-clamp-2">
+                                                       Microsoft - Xbox Controller</h1>
+                                             </div>
+
+                                             <div class="flex flex-wrap justify-between w-full ">
+                                                  <p class="text-lg font-semibold">⭐ 4.8</p>
+                                                  <p class="text-black text-xl font-bold whitespace-nowrap">
+                                                       $69.99
+                                                  </p>
+                                             </div>
+
+
+                                        </figcaption>
+                                   </figure>
+
+                              </div>
+
+
+                              <!-- If we need navigation buttons -->
+                              <!-- <div class="swiper-button-prev"></div>
+                                   <div class="swiper-button-next"></div> -->
+
+
+                         </div>
+
+                    </div>
+               </div>
+          </section>
+
+     </main>
+     <footer
+          class=" w-full h-full pt-24 pb-14 relative after:w-3/5 after:h-[1px] after:absolute after:top-10 after:left-1/2 after:right-1/2 after:-translate-x-1/2  after:bg-gradient-to-l after:from-black after:via-black after:from-50%  after:via-100% after:to-black after:to-50%">
+
+          <div class="container w-full flex flex-wrap justify-around items-center gap-10  pb-16">
+
+               <div class="flex flex-col">
+                    <h1 class="text-black text-xl font-semibold pb-7">Get Help</h1>
+
+                    <div class="flex flex-col gap-5">
+                         <a href="#">
+                              <p class="text-base font-medium text-[#494949]">Frequently Asked Questions</p>
+                         </a>
+                         <a href="#">
+                              <p class="text-base font-medium text-[#494949]">Order Status</p>
+                         </a>
+                         <a href="#">
+                              <p class="text-base font-medium text-[#494949]">Power Up Rewards Credit Card</p>
+                         </a> <a href="#">
+                              <p class="text-base font-medium text-[#494949]">Recall Notices</p>
+                         </a> </a>
+                         <a href="#">
+                              <p class="text-base font-medium text-[#494949]">Returns</p>
+                         </a>
+
+                         <a href="#">
+                              <p class="text-base font-medium text-[#494949]">Store Feedback
+                              </p>
+                         </a>
+
+                    </div>
+               </div>
+               <div class="flex flex-col">
+                    <h1 class="text-black text-xl font-semibold pb-7">Legal and Privacy</h1>
+
+                    <div class="flex flex-col gap-5">
+                         <a href="#">
+                              <p class="text-base font-medium text-[#494949]">CA Privacy Right</p>
+                         </a>
+                         <a href="#">
+                              <p class="text-base font-medium text-[#494949]">CA transparency Act</p>
+                         </a>
+                         <a href="#">
+                              <p class="text-base font-medium text-[#494949]">Conditions Of use</p>
+                         </a> <a href="#">
+                              <p class="text-base font-medium text-[#494949]">Do Not Sell Or Share My Personal
+                                   Information
+                              </p>
+                         </a> </a>
+                         <a href="#">
+                              <p class="text-base font-medium text-[#494949]">Privacy Policy</p>
+                         </a>
+
+                         <a href="#">
+                              <p class="text-base font-medium text-[#494949]">Power UP Rewards Terms And Conditions
+                              </p>
+                         </a>
+
+                    </div>
+               </div>
+               <div class="flex flex-col">
+                    <h1 class="text-black text-xl font-semibold pb-7">About us</h1>
+
+                    <div class="flex flex-col gap-5">
+                         <a href="#">
+                              <p class="text-base font-medium text-[#494949]">Accessibility</p>
+                         </a>
+                         <a href="#">
+                              <p class="text-base font-medium text-[#494949]">Affiliates</p>
+                         </a>
+                         <a href="#">
+                              <p class="text-base font-medium text-[#494949]">Careers</p>
+                         </a> <a href="#">
+                              <p class="text-base font-medium text-[#494949]">Investors</p>
+                         </a> </a> <a href="#">
+                              <p class="text-base font-medium text-[#494949]">Game Informer</p>
+                         </a>
+
+                    </div>
+               </div>
+               <div class=" flex flex-col">
+                    <h1 class="text-black text-xl font-semibold pb-7">Sign Up</h1>
+                    <p class="text-[#494949] text-base font-medium ">Get Exclusive Promotions, Coupons And Events</p>
+                    <!-- newsletter -->
+                    <div class="flex mt-3">
+                         <input type="text"
+                              class="bg-[#D9D9D9] py-3 px-6 placeholder:text-[#494949] placeholder:font-medium"
+                              placeholder="Enter Your E-mail">
+                         <button class="py-3 px-8 bg-primary text-black text-base font-medium">Join</button>
+                    </div>
+
+                    <!-- contact us -->
+                    <div class="flex flex-col items-start">
+                         <p class="text-xl font-semibold pt-16">Connect With Us</p>
+                         <div class="flex gap-5 items-center pt-5">
+                              <a href="#">
+                                   <img src="./src/assets/img/facebook.svg" class="w-full h-full" alt="facebook">
+                              </a>
+
+                              <a href="#">
+                                   <img src="./src/assets/img/instagram.svg" class="w-full h-full" alt="instagram">
+                              </a>
+
+                              <a href="#">
+                                   <img src="./src/assets/img/twitter.svg" class="w-full h-full" alt="twitter">
+                              </a>
+
+                              <a href="#">
+                                   <img src="./src/assets/img/youtube.svg" class="w-full h-full" alt="youtube">
+                              </a>
+                         </div>
+                    </div>
+
+
+               </div>
+          </div>
+
+          <div class="bg-black w-full flex items-start justify-center py-5 ">
+               <div class="text-gray-400 font-normal">All Right Reversed©2022 | Desinged With Love By <a href="t.me/Mhhsae" class="text-white font-medium">Mahsa ❤️</a> Developed with  Coffee By <a
+                         href="t.me/mhdi_nzari" class="text-white font-medium">Mahdi Nazari 🍵</a></div>
+          </div>
+
+     </footer>
+
+     <script src=" https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"> </script>
+     <script src="./src/js/App.js">
+     </script>
+
+</body>
+
+</html>

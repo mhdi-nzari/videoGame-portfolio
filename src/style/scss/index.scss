@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./base";
+@import './reset';
+@import './font';
+
+
+
+
+#header {
+     background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.26)), linear-gradient(180deg, rgba(0, 0, 0, 0) 74.49%, rgba(0, 0, 0, 0.85) 95.83%, rgba(0, 0, 0, 0.7) 100%, rgba(0, 0, 0, 0.8) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 4.46%, rgba(0, 0, 0, 0.226264) 7.61%, rgba(0, 0, 0, 0.226264) 9.49%, rgba(0, 0, 0, 0) 17.26%), linear-gradient(90deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.78) 41.86%, rgba(0, 0, 0, 0.55) 53.51%, rgba(0, 0, 0, 0.4) 64.75%, rgba(0, 0, 0, 0) 73.19%), url('/src/assets/img/banner.jpg');
+}

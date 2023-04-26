@@ -1,0 +1,46 @@
+$bg-color: #F2F2F2;
+$secondary: #4b4b4b;
+
+:root {
+     --bg-color: #{$bg-color};
+
+}
+
+body {
+     overflow-x: hidden;
+     width: 100vw;
+     height: 100vh;
+     background-color: $bg-color;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+     width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+     background: #3f3f3f;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+     background: #fff;
+     border-radius: 10px;
+
+
+
+}
+
+
+
+
+// img have not been decrease reasolation
+
+img {
+     object-fit: cover;
+}
+
+// 0936-534-2013 hassan rahimi
